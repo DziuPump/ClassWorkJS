@@ -23,3 +23,13 @@ const arraySorter = function(arr1, arr2){
     const merged = [...new Set(arr1.concat(arr2))]
     return merged.sort((a, b) => a-b)
 }
+
+// 6. Write a function that takes an object (a) and a string (b) as argument  Return true if the object has a property with key 'b' Return false otherwise
+const keyChecker = function(a, b){
+    for(let i = 0; i<keys(a).length; i++){
+        if (b === keys(a)[i]){
+            return true;
+        } 
+    }
+    return false;
+}
