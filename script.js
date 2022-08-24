@@ -26,10 +26,6 @@ const arraySorter = function(arr1, arr2){
 
 // 6. Write a function that takes an object (a) and a string (b) as argument  Return true if the object has a property with key 'b' Return false otherwise
 const keyChecker = function(a, b){
-    for(let i = 0; i<keys(a).length; i++){
-        if (b === keys(a)[i]){
-            return true;
-        } 
-    }
-    return false;
+    if(keys(a).includes(b)) return true;
+    else return false;
 }
