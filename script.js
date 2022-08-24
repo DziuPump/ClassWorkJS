@@ -8,11 +8,14 @@ const lastThree = function(string){
     return string.substring(string.length -3)
 }
 
-
 // 3. Write a function that takes a number (a) as argument Split a into its individual digits and return them in an array.
 
 const splitter = function (a){
-    const array = Array.from(String(a), Number);
-    return array;
+    return Array.from(String(a), Number);
 }
 
+// 4. Write a function that takes an array (a) and a number (n) as arguments It should return the last n elements of a
+
+const returnN = function(a, n){
+    return a.splice(-n);
+}
